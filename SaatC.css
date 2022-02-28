@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  width: 40rem;
+  height: 40rem;
+  border: 5px solid black;
+  border-radius: 50%;
+  background: url("https://cssanimation.rocks/images/posts/clocks/ios_clock.svg")
+    center;
+  background-color: #0F8AA1;
+  background-repeat: no-repeat;
+  background-size: 93%;
+}
+
+.saniye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 15rem;                    /* Rem, root elements font size*/
+  width: 0.15rem;
+  background-color: #e6b89c;
+  transform: translateX(-50%);     /*Nesne ne kadar top ve left'ten %50 versen de sol üstü hizalanır. Tam orta için yarısı kadar da sola kaydır*/
+  transform-origin: 25% 0;         
+  
+}
+
+.dakika {
+  position: absolute;
+  top: 50.5%;
+  left: 50%;
+  height: 12rem;
+  width: 0.3rem;
+  border-radius: 20px;
+  background-color: #9cafb7;
+  transform: translateX(-50%);   
+  transform-origin: 25% 0;         
+  
+}
+
+.saat {
+  position: absolute;
+  top: 49.5%;
+  left: 50%;
+  height: 10rem;
+  width: 0.6rem;
+  border-radius: 20px;
+  background-color: #07334d;
+  
+  transform: translateX(-50%);    
+  transform-origin: 25% 0;
+}
+
+.dot{
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  height: 1rem;
+  width: 0.95rem;
+  border-radius: 20px;
+  background-color: #fe938c;
+  transform: translateX(-50%);
+}
